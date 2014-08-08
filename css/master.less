@@ -1,13 +1,14 @@
 @import '../bower_components/bootstrap/less/bootstrap';
 
 @font-size-base: 16px;
+@icon-font-path: '../bower_components/bootstrap/fonts/';
 
 @text-color: black;
 @background: #e0e0e0;
 @darker-background: #c2c2c2;
 
 @dark-gray: #464547; //(footer)
-@darkest-gray: #313032; //(footer copywrite)
+@darkest-gray: #313032; //(footer copyright)
 
 
 html{
@@ -35,7 +36,7 @@ header{
 					position: absolute;
 					top: 0;
 					left: 50%;
-					margin-left: -66px;
+					margin-left: -78px;
 				}
 				ul.main-nav{
 					list-style-type: none;
@@ -88,5 +89,50 @@ header{
 				}
 			}
 		}
+	}
+}
+
+footer{
+	background: @dark-gray;
+	color: #b6b7b8;
+	margin-top: 38px;
+	.box-shadow(0px 0px 30px 8px fade(black, 30%));
+	#footer-section-labels{
+		border-bottom: 2px solid #4c4b4d;
+		margin-bottom: 15px;
+		span{
+			padding: 22px 0;
+			display: inline-block;
+			text-transform: uppercase;
+			font-size: unit(19/@font-size-base, em);
+		}
+	}
+	#footer-content{
+		.inner{
+			&.contact{
+				span, a{
+					font-size: unit(11/@font-size-base, em);
+					display: block;
+				}
+				a{
+					color: #b6b7b8;
+					text-decoration: none;
+					margin-top: 15px;
+				}
+			}
+			&.create{
+				.clearfix();
+				img{
+					float: right;
+				}
+			}
+		}
+	}
+	#copyright-bar{
+		margin-top: 8px;
+		padding: 12px 0;
+		font-size: unit(10/@font-size-base, em);
+		background: @darkest-gray;
+		color: #7d7d7e;
 	}
 }
