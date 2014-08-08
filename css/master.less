@@ -1,0 +1,92 @@
+@import '../bower_components/bootstrap/less/bootstrap';
+
+@font-size-base: 16px;
+
+@text-color: black;
+@background: #e0e0e0;
+@darker-background: #c2c2c2;
+
+@dark-gray: #464547; //(footer)
+@darkest-gray: #313032; //(footer copywrite)
+
+
+html{
+	background: @darkest-gray;
+	body{
+		background: @background;
+	}
+}
+
+header{
+	@media(min-width: @grid-float-breakpoint){
+		position: relative;
+		z-index: 5;
+		nav{
+			&#main-nav{
+				.clearfix();
+				position: relative;
+				z-index: 3;
+				background: @background url(../images/tree-pattern.png) center center repeat-x;
+				.box-shadow(0px 0px 15px 8px fade(black, 30%));
+				.container{
+					max-width: 970px;
+				}
+				.brand.centered{
+					position: absolute;
+					top: 0;
+					left: 50%;
+					margin-left: -66px;
+				}
+				ul.main-nav{
+					list-style-type: none;
+					margin: 0;
+					padding: 0;
+					.clearfix();
+					float: left;
+					width: 50%;
+					.box-sizing(border-box);
+					&.nav-left{
+						padding-right: 66px;
+					}
+					&.nav-right{
+						padding-left: 66px;
+					}
+					li{
+						width: 33.3333333%;
+						float: left;
+						text-align: center;
+						a{
+							//192px
+							padding: 31px 7px;
+							border-bottom: 5px solid transparent;
+							display: inline-block;
+							text-align: center;
+							font-size: unit(18/@font-size-base, em);
+							text-decoration: none;
+							color: @text-color;
+							text-transform: uppercase;
+							&:hover{
+								border-color: @text-color;
+							}
+						}
+						&.active a{
+							border-color: @text-color;
+						}
+					}
+				}
+			}
+			&#sub-nav{
+				position: relative;
+				z-index: 2;
+				background: @darker-background url(../images/tree-pattern.png) center center repeat-x;
+				padding-top: 40px;
+				&.affix{
+					position: fixed;
+					width: 100%;
+					.box-sizing(border-box);
+					top: 0;
+				}
+			}
+		}
+	}
+}
