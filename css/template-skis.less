@@ -1,0 +1,20 @@
+section{
+	&#product{
+		.product-wrapper{
+			cursor: pointer;
+			img.img-responsive{
+				&.show-hover{
+					display: none;
+				}
+			}
+			&:hover{
+				img.img-responsive{
+					display: none;
+					&.show-hover{
+						display: block;
+					}
+				}
+			}
+		}
+	}
+}
