@@ -123,3 +123,39 @@ footer{
 		color: #7d7d7e;
 	}
 }
+
+.carousel{
+	.carousel-control{
+		span{
+			width: 44px;
+			height: 86px;
+			background: transparent url('../images/slider-sprite.png') no-repeat;
+			margin-top: -43px;
+			margin-left: -22px;
+			display: block;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+		}
+		&.left{
+			span{
+				background-position: 0 0;
+			}
+			&:hover{
+				span{
+					background-position: 0 -91px;
+				}
+			}
+		}
+		&.right{
+			span{
+				background-position: -49px 0;
+			}
+			&:hover{
+				span{
+					background-position: -49px -91px;
+				}
+			}
+		}
+	}
+}
