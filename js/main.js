@@ -21,7 +21,8 @@ $(function(){
 						method: 'pause'
 					};
 			if($player.length > 0){
-				$player[0].contentWindow.postMessage(JSON.stringify(data));
+				var url = window.location.protocol + $player.attr('src').split('?')[0];
+				$player[0].contentWindow.postMessage(JSON.stringify(data), url);
 			}
 			$activeSlide.parent().animate({
 				'height': newHeight
