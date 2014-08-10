@@ -13,10 +13,17 @@ $(function(){
 
 	$('.carousel')
 		.on('slide.bs.carousel', function(e){
-			console.log(e.relatedTarget);
-			var newHeight = $(e.relatedTarget).outerHeight();
-			console.log(newHeight);
-			$(this).find('.item.active').parent().animate({
+			var $activeSlide = $(this).find('.item.active'),
+					$nextSlide = $(e.relatedTarget),
+					newHeight = $nextSlide.outerHeight(),
+					$player = $activeSlide.find('iframe'),
+					data = {
+						method: 'pause'
+					};
+			if($player.length > 0){
+				$player[0].contentWindow.postMessage(JSON.stringify(data));
+			}
+			$activeSlide.parent().animate({
 				'height': newHeight
 			}, 500);
 		})
