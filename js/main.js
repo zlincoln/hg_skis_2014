@@ -9,7 +9,9 @@ $(function(){
 		$('header + section').css('padding-top', '0px');
 	});
 
-	$('[data-fitvids-target]').fitVids();
+	if($('[data-fitvids-target]').length > 0){
+		$('[data-fitvids-target]').fitVids();
+	}
 
 	$('.carousel')
 		.on('slide.bs.carousel', function(e){

@@ -3,6 +3,7 @@
 <head>
 	<title>HG Skis</title>
 	<link rel="stylesheet" type="text/css" href="css/master.css">
+	<link href='http://fonts.googleapis.com/css?family=Ek+Mukta:300,400,700' rel='stylesheet' type='text/css'>
 </head>
 <body>
 
@@ -22,7 +23,13 @@
 			<a href="index.html" class="brand centered" style="background: transparent url(images/logo-box.png) center -18px no-repeat;">
 				<img class="img-responsive" src="images/logo.png" style="margin-top: -18px;">
 			</a>
-			<div class="container">
+			<button type="button" id="mobile-nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#mobile-collapse-target">
+				<span class="sr-only">Toggle Navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<div id="mobile-collapse-target" class="container collapse">
 				<ul class="main-nav nav-left">
 					<li class="active"><a href="index.html">Home</a></li>
 					<li><a href="skis.html">Skis</a></li>
@@ -49,11 +56,11 @@
 		</nav>
 	</header>
 	<section id="banner">
-		<div id="carousel-example-generic" class="carousel slide">
+		<div id="banner-carousel" class="carousel slide">
 		  <!-- Indicators -->
 		  <ol class="carousel-indicators">
-		    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-		    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+		    <li data-target="#banner-carousel" data-slide-to="0" class="active"></li>
+		    <li data-target="#banner-carousel" data-slide-to="1"></li>
 		  </ol>
 
 		  <!-- Wrapper for slides -->
@@ -69,11 +76,11 @@
 		  </div>
 
 		  <!-- Controls -->
-		  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+		  <a class="left carousel-control" href="#banner-carousel" role="button" data-slide="prev">
 		  	<span></span>
 		    <!-- <span class="glyphicon glyphicon-chevron-left"></span> -->
 		  </a>
-		  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+		  <a class="right carousel-control" href="#banner-carousel" role="button" data-slide="next">
 		    <!-- <span class="glyphicon glyphicon-chevron-right"></span> -->
 		    <span></span>
 		  </a>
@@ -82,7 +89,7 @@
 	<section id="home-featured">
 		<div class="container">
 			<div class="row">
-				<div class="col-xs-6">
+				<div class="col-xs-12 col-md-6">
 					<div class="featured-block left">
 						<h3>Featured Products <small class="pull-right"><a href="javascript:void(0)">view all products</a></small></h3>
 						<div class="row">
@@ -95,7 +102,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-xs-6">
+				<div class="col-xs-12 col-md-6">
 					<div class="featured-block right">
 						<h3>Latest News <small class="pull-right"><a href="javascript:void(0)">view all news</a></small></h3>
 						<div class="row">
