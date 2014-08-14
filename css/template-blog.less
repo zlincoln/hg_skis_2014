@@ -1,0 +1,61 @@
+#blog{
+	article{
+		margin-bottom: 20px;
+		.heading{
+			background: #efefef;
+			padding: 15px;
+			h3{
+				margin: 0;
+				text-transform: uppercase;
+			}
+		}
+		.content{
+			p{
+				margin: 15px;
+				a{
+					color: @red;
+					font-style: italic;
+				}
+			}
+		}
+		&:first-of-type{
+			margin-top: 20px;
+		}
+	}
+	.pager{
+		a{
+			background: transparent;
+			border-radius: 0px;
+			color: @text-color;
+			&:hover{
+				background: transparent;
+				color: @red;
+			}
+		}
+	}
+	#sidebar{
+		img.ad{
+			margin-top: 20px;
+		}
+		h4{
+			margin: 15px 0;
+			padding: 15px;
+			background: #efefef;
+			text-transform: uppercase;
+		}
+		ul.nav{
+			li{
+				a{
+					padding: 4px 12px;
+					color: @text-color;
+					text-transform: uppercase;
+					&:hover{
+						// background: #efefef;
+						background: transparent;
+						color: @red;
+					}
+				}
+			}
+		}
+	}
+}
