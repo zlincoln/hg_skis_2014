@@ -1,5 +1,9 @@
 section{
 	&#product{
+		.view-label{
+			text-align: center;
+			margin-top: 4px;
+		}
 		.product-wrapper{
 			cursor: pointer;
 			img.img-responsive{
@@ -13,6 +17,44 @@ section{
 					&.show-hover{
 						display: block;
 					}
+				}
+			}
+		}
+		.description-wrapper{
+			h2{
+				margin-top: 0;
+				text-transform: uppercase;
+			}
+			.price{
+				font-size: unit(36/@font-size-base, em);
+			}
+			form button[type="submit"]{
+				border-radius: 0px;
+				border: none;
+				background: @text-color;
+				color: white;
+				text-transform: uppercase;
+				margin-top: 10px;
+				margin-bottom: 34px;
+			}
+			h3{
+				font-weight: 300;
+				text-transform: uppercase;;
+				padding: 15px;
+				border-bottom: 1px solid #a4a4a5;
+				margin-bottom: 0px;
+			}
+			.table-striped > tbody > tr{
+				&:nth-child(odd) > td{
+					border: none;
+					background: #cbcbcb;
+				}
+				&:nth-child(even) > td{
+					border: none;
+					background: transparent;
+				}
+				& > td:first-child{
+					text-transform: uppercase;
 				}
 			}
 		}
