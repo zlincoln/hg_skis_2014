@@ -1,6 +1,9 @@
 $(function(){
 	if($('#sub-nav').length > 0){
-		$('body').scrollspy({target: '#scrollspy'});
+		$('body').scrollspy({
+			target: '#scrollspy',
+			offset: 51
+		});
 		$('#sub-nav').affix({
 			offset: {
 				top: 132

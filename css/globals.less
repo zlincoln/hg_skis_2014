@@ -2,6 +2,7 @@ html{
 	background: @darkest-gray;
 	body{
 		background: @background;
+		position: relative;
 	}
 }
 
@@ -70,13 +71,14 @@ header{
 				background: @darker-background url(../images/tree-pattern.png) 10% center repeat-x;
 				padding-top: 40px;
 				.box-shadow(0px 0px 15px 8px fade(black, 30%));
-				.btn-group{
+				.nav-justified{
 					max-width: 940px;
 					margin: 0 auto;
-					a.btn{
+					a{
 						text-decoration: none;
 						padding: 0 12px;
 						border: none;
+						background: transparent;
 						span{
 							padding: 12px 4px 8px;
 							line-height: 1;
@@ -86,9 +88,15 @@ header{
 							border-bottom: 5px solid transparent;
 							.box-sizing(border-box);
 						}
-						&:hover span{
-							border-color: @text-color;
+						&:hover{
+							background: transparent;
+							span{
+								border-color: @text-color;
+							}
 						}
+					}
+					li.active a span{
+						border-color: @text-color;
 					}
 				}
 				&.affix{
