@@ -67,7 +67,7 @@ header{
 			&#sub-nav{
 				position: relative;
 				z-index: 2;
-				background: @darker-background url(../images/tree-pattern.png) center center repeat-x;
+				background: @darker-background url(../images/tree-pattern.png) 10% center repeat-x;
 				padding-top: 40px;
 				.box-shadow(0px 0px 15px 8px fade(black, 30%));
 				.btn-group{
@@ -225,5 +225,26 @@ footer{
 				}
 			}
 		}
+	}
+}
+
+.address{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+section.heading{
+	background: #efefef;
+	text-transform: uppercase;
+	margin: 15px 0;
+	&:first-of-type{
+		margin-top: 0;
+	}
+	h1{
+		font-size: unit(30/@font-size-base, em);
+		margin: 0;
+		padding: 8px 0;
+		line-height: 1;
 	}
 }

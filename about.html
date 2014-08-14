@@ -44,7 +44,7 @@
 		</nav>
 		<nav id="sub-nav">
 			<div class="container">
-				<div class="btn-group btn-group-justified">
+				<div id="scrollspy" class="btn-group btn-group-justified">
 					<a href="#about" class="btn btn-link"><span>About</span></a>
 					<a href="#contact" class="btn btn-link"><span>Contact</span></a>
 					<a href="#history" class="btn btn-link"><span>History</span></a>
@@ -55,15 +55,13 @@
 		</nav>
 	</header>
 	<section id="banner">
-		<img class="img-responsive" src="images/temp/banner-img-about.png">
+		<img class="img-responsive" src="images/temp/banner-img-about.png" style="margin: 0 auto;">
 	</section>
 	<section id="about" class="heading">
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-12">
-					<div class="page-heading">
-						<h1>About</h1>
-					</div>
+					<h1>About</h1>
 				</div>
 			</div>
 		</div>
@@ -71,14 +69,15 @@
 	<section>
 		<div class="container">
 			<div class="row">
-				<div class="col-xs-4">
-					<img class="img-responsive" src="http://placehold.it/800x800">
+				<div class="col-xs-3">
+					<img class="img-responsive" src="images/smoke-polaroid.png" style="margin: 0 auto;">
 				</div>
-				<div class="col-xs-4">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<div class="col-xs-6">
+					<p style="margin-top: 40px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 				</div>
-				<div class="col-xs-4">
-					<img class="img-responsive" src="http://placehold.it/800x800">
+				<div class="col-xs-3">
+					<img class="img-responsive" src="images/smoke-polaroid.png" style="margin: 0 auto;">
 				</div>
 			</div>
 		</div>
@@ -98,26 +97,45 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-4">
-					<ul class="address">
-						<li>HG Skis</li>
-						<li>70 S. Winooski Ave #194</li>
-						<li>Burlington, VT 05401</li>
-					</ul>
+					<div class="about-inner address">
+						<div class="icon">
+							<i class="glyphicon glyphicon-map-marker"></i>
+						</div>
+						<div class="content">
+							<ul class="address">
+								<li>HG Skis</li>
+								<li>70 S. Winooski Ave #194</li>
+								<li>Burlington, VT 05401</li>
+							</ul>
+						</div>
+					</div>
 				</div>
 				<div class="col-xs-4">
-					<ul>
-						<li><a href="mailto:info@hgskis.com">info@hgskis.com</a></li>
-					</ul>
+					<div class="about-inner">
+						<div class="icon">
+							<i class="glyphicon glyphicon-envelope"></i>
+						</div>
+						<div class="content">
+							<a href="mailto:info@hgskis.com">info@hgskis.com</a>
+						</div>
+					</div>
 				</div>
 				<div class="col-xs-4">
-					<span>Send us a sase and we'll send you stickers back!</span>
+					<div class="about-inner">
+						<div class="icon">
+							<img class="img-responsive" src="images/sticker-icon.png">
+						</div>
+						<div class="content">
+							<span>Send us a SASE and we'll send you stickers back!</span>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
 	</section>
 	<section id="history" class="heading">
 		<div class="container">
-			<div class="row">
+			<div class="row" class="page-heading">
 				<div class="col-xs-12">
 					<div class="page-heading">
 						<h1>History</h1>
@@ -131,7 +149,7 @@
 			<div class="row">
 				<div class="col-xs-12">
 					<p>
-						<img src="images/history-polaroids/top.png" style="float: right;"><img src="images/history-polaroids/middle.png" style="float: right;"><img src="images/history-polaroids/bottom.png" style="float: right;">
+						<img src="images/history-polaroids/top.png" style="float: right; margin: 0px -40px 0 0;"><img src="images/history-polaroids/middle.png" style="float: right; margin: 0px -40px 0 0;"><img src="images/history-polaroids/bottom.png" style="float: right; margin: 0px -40px 0 0;">
 						HG Skis is a freestyle ski company based in Burlington, VT. While we’ve been building and designing skis since 2006, the company was officially established in 2010. In the age of “locally grown products” and “micro-brew” ski companies, the east coast has been left without its own ski brand. As the only representatives of the east coast in the ski industry, we design, prototype, and manufacture product specifically for our terrain.<br><br>
 						In 2006 I began work on a senior project in high school. Over a five 
 						month process I built a ski press, a mold, and many of the 
@@ -163,7 +181,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-3">
-					<img class="img-responsive" src="http://placehold.it/800x800">
+					<img class="img-responsive" src="images/first-stop-polaroid.png">
 				</div>
 				<div class="col-xs-3">
 					<h3>First Stop Board Barn</h3>
@@ -173,7 +191,7 @@
 					</ul>
 				</div>
 				<div class="col-xs-3">
-					<img class="img-responsive" src="http://placehold.it/800x800">
+					<img class="img-responsive" src="images/first-stop-polaroid.png">
 				</div>
 				<div class="col-xs-3">
 					<h3>First Stop Board Barn</h3>
